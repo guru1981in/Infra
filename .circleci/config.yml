@@ -7,11 +7,11 @@ jobs:
     steps:
       - checkout
       - run:
-        command: echo $(AWS_Access_Key_ID)
+          command: echo $(AWS_Access_Key_ID)
       - run:
-        command: echo $(AWS_Secret_Access_Key)
+          command: echo $(AWS_Secret_Access_Key)
       - run:
-        commamd: echo $(Default_region_name)  
+          command: echo $(Default_region_name).  
       - run:
           name: Ensure backend infrastructure exist
           command: |
